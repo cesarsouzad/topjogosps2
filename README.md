@@ -17,4 +17,5 @@ API Externa: Dados dos jogos são consumidos a partir de uma API externa criado 
 
 Você pode acessar o aplicativo em produção através do seguinte link:
 
-[**Top Jogos PS2- Demo**](https://topjogosps2.netlify.app/)
+<a href="https://cesarsouzad.github.io/topjogosps2/" target="_blank"><b>Top Jogos PS2 - Demo</b></a>
+   
