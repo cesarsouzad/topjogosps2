@@ -12,3 +12,9 @@ React: Framework JavaScript para construção da interface.
 TypeScript: Superset do JavaScript, usado para fornecer tipagem estática e melhorar a segurança do código.
 CSS: Para estilização da interface.
 API Externa: Dados dos jogos são consumidos a partir de uma API externa criado por mim em express e hospedada em railway.
+
+🌐 Demo
+
+Você pode acessar o aplicativo em produção através do seguinte link:
+
+[**Top Jogos PS2- Demo**](https://topjogosps2.netlify.app/)
