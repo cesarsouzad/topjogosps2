@@ -1,0 +1,159 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* Garante que as bordas e o padding não afetem o tamanho dos elementos */
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  /* Centraliza os itens horizontalmente */
+  align-items: center;
+  /* Centraliza os itens verticalmente */
+  position: fixed;
+  /* Para fixar o header no topo */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 60px;
+  /* Ou o tamanho que preferir */
+  background: rgb(7, 0, 45);
+  background: linear-gradient(90deg, rgba(7, 0, 45, 1) 0%, rgba(37, 37, 37, 1) 15%, rgba(0, 0, 0, 1) 46%, rgba(0, 0, 0, 1) 54%, rgba(37, 37, 37, 1) 85%, rgba(66, 0, 0, 1) 100%);
+  z-index: 1000;
+  /* Para garantir que o header fique por cima de outros conteúdos */
+  padding: 0 20px;
+  box-shadow: 0px 20px 100px 30px rgb(0 109 255 / 56%);
+}
+
+.logo {
+  max-height: 56px;
+  /* Tamanho máximo da imagem */
+  margin-right: 20px;
+}
+
+.search {
+  padding: 5px;
+  height: 30px;
+  width: 350px;
+  border-radius: 15px;
+  border: 1px solid #ccc;
+  /* Remove a borda do input */
+  background-color: #1f1f1f;
+  /* Cor de fundo cinza */
+  color: #5f5f5f;
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  text-indent: 8px;
+  text-transform: uppercase;
+}
+
+.search:focus {
+  outline: none;
+  /* Remove o contorno da borda ao focar no input */
+}
+
+.search-icon {
+  position: absolute;
+  padding: 5px;
+  right: 21px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: linear-gradient(90deg, rgba(0, 87, 169, 0.2) 0%, rgba(0, 87, 169, 1) 100%);
+  border: none;
+  cursor: pointer;
+  font-size: 100%;
+  border-radius: 86px;
+  width: 3rem;
+  color: #ccc;
+  font-weight: bold;
+  transition: 1s ease-in-out;
+  /* Transição suave no gradiente */
+}
+
+.search-icon:hover {
+  background: linear-gradient(90deg, rgba(0, 87, 169, 0.2) 0%, rgba(169, 0, 0, 1) 100%);
+  /* Gradiente alterado ao passar o mouse */
+}
+
+/* Main Content */
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Grid de Jogos */
+main {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr)); /* Ajuste o minmax para o tamanho desejado */
+  gap: 30px;
+  width: 90%;
+  margin: auto;
+  margin-top: 100px;
+}
+
+.game-card {
+  background: rgba(0, 89, 255, 0.15);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(1px);
+  -webkit-backdrop-filter: blur(1px);
+  border-radius: 10px;
+  border: 1px solid #ffffff69;
+  text-align: center;
+  cursor: pointer;
+  transition: 350ms ease-in-out;
+}
+
+.game-card:hover {
+  background: rgba(0, 89, 255, 0.421);
+  box-shadow: 0 8px 32px 0 rgba(255, 255, 255, 0.37);
+  backdrop-filter: blur(9px);
+  -webkit-backdrop-filter: blur(9px);
+}
+
+.game-card h3 {
+  color: rgba(204, 204, 204);
+  text-shadow:
+    0 0 6px rgba(202, 228, 225, 0.92),
+    0 0 30px rgba(202, 228, 225, 0.34),
+    0 0 12px rgba(30, 132, 242, 0.52),
+    0 0 21px rgba(30, 132, 242, 0.92),
+    0 0 34px rgba(30, 132, 242, 0.78),
+    0 0 54px rgba(30, 132, 242, 0.92);
+}
+
+.game-card p {
+  color: rgba(127, 255, 212, 0.514);
+  text-shadow:
+    0 0 6px rgba(202, 228, 225, 0.92),
+    0 0 30px rgba(202, 228, 225, 0.34),
+    0 0 12px rgba(30, 242, 189, 0.52),
+    0 0 21px rgba(30, 242, 157, 0.92),
+    0 0 34px rgba(30, 242, 200, 0.78),
+    0 0 54px rgba(30, 242, 132, 0.92);
+  padding: 15px;
+}
+
+.game-card, img {
+  padding-bottom: 15px;
+  transform: translate(0);
+  transition: 300ms;
+}
+
+.game-card:hover img {
+  transform: translate(0px, -30px);
+}
+
+.position {
+  text-shadow: 0 0 5px #ffa500, 0 0 15px #ffa500, 0 0 20px #ffa500, 0 0 40px #ffa500, 0 0 60px #ff0000, 0 0 10px #ff8d00, 0 0 98px #ff0000;
+  color: #fff6a9;
+}
